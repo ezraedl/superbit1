@@ -1,3 +1,4 @@
+let a = 0
 radio.onReceivedNumber(function (receivedNumber) {
     if (0 == receivedNumber) {
         SuperBit.MotorRunDual(
@@ -36,6 +37,9 @@ input.onGesture(Gesture.TiltLeft, function () {
 input.onButtonPressed(Button.AB, function () {
     radio.sendNumber(2)
 })
+function anyfunc () {
+    a = 5
+}
 basic.forever(function () {
     basic.showLeds(`
         . . . . #
